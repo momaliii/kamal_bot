@@ -1,0 +1,31 @@
+sudo apt update
+sudo apt install python3-pip python3-venv git -y
+git clone https://github.com/momaliii/deeb_bot.git
+cd your-folder
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pip install matplotlib
+pip install python-telegram-bot
+pip install apscheduler
+pip install aiosqlite
+
+----------------------------------------------------
+in windows
+set TELEGRAM_BOT_TOKEN=7403256647:AAFQhnMvdR0ZgzPTl7omB0DmRr2MfJm3ms0
+
+in Ubuntu
+export TELEGRAM_BOT_TOKEN='7403256647:AAFQhnMvdR0ZgzPTl7omB0DmRr2MfJm3ms0'
+or
+nano ~/.bashrc
+export TELEGRAM_BOT_TOKEN='7403256647:AAFQhnMvdR0ZgzPTl7omB0DmRr2MfJm3ms0'
+Save the file and exit (in nano, use CTRL+O to save and CTRL+X to exit).
+source ~/.bashrc
+echo $TELEGRAM_BOT_TOKEN
+
+
+python bot.py
+sudo apt install screen
+screen -S bot
+python bot.py
+Press Ctrl+A then D to detach and leave it running in the background.
